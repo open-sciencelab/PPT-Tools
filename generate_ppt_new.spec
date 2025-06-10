@@ -3,7 +3,7 @@
 
 a = Analysis(
     ['generate_ppt_new.py'],
-    pathex=[],
+    pathex=['G:/Project/AI-LAB/ppt-tool'],
     binaries=[],
     datas=[('eg1.pptx', '.'), ('eg2.pptx', '.')],
     hiddenimports=[],
@@ -32,6 +32,7 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+    single_file=True,
 )
 coll = COLLECT(
     exe,
